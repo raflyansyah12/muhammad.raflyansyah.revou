@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portofolio Muhammad Rafliansyah - Web Developer" />
+  <title>Muhammad Rafliansyah — Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/script.js">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Muhammad <span class="accent">Rafliansyah</span></div>
+      <button id="navToggle" class="nav-toggle" aria-label="Buka menu">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Projek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Halo, saya <span class="accent">Muhammad Rafliansyah</span></h1>
+        <p class="lead">Web Developer pemula — suka bikin UI keren & interaktif.</p>
+        <div class="hero-actions">
+          <button id="viewProjects">Lihat Projek</button>
+          <a class="cta-link" href="#contact">Hubungi</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya belajar membuat website, aplikasi, dan proyek kecil lainnya. Fokus saya adalah HTML, CSS, dan JavaScript. Selalu ingin belajar lebih dalam tiap hari.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projek</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>To-Do List</h3>
+            <p>Aplikasi sederhana untuk mengelola tugas harian.</p>
+          </article>
+          <article class="card">
+            <h3>Kalkulator</h3>
+            <p>Kalkulator interaktif dengan animasi tombol.</p>
+          </article>
+          <article class="card">
+            <h3>Portofolio</h3>
+            <p>Website pribadi untuk pamer projek dan kontak.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Kirim pesan kalau mau kolaborasi atau tanya-tanya.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <input type="text" name="name" placeholder="Nama kamu" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Pesan..." rows="5" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Muhammad Rafliansyah • Dibuat dengan semangat belajar.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
